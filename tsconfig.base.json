@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@drop-team/client/components": ["apps/client/components"],
+      // app client alias
+      "@components/*": ["apps/client/components/*"],
+      "@utils/*": ["apps/client/utils/*"],
+      // libs alias
       "@drop-team/shared-types": ["libs/shared-types/src/index.ts"]
     }
   },

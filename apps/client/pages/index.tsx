@@ -1,4 +1,4 @@
-import LayoutPost from '../components/layout/post';
+import { LayoutPost } from '@components/layout/post';
 
 export function Index() {
   return <LayoutPost>{}</LayoutPost>;

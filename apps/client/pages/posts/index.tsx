@@ -1,8 +1,8 @@
 import publicRuntimeConfig from '../../utils/config';
 
 // Import components.
-import LayoutPost from '../../components/layout/post';
-import Posts from '../../components/models/list';
+import LayoutPost from '@components/layout/post';
+import Posts from '@components/models/list';
 
 // Import interfaces.
 import { IPost } from '@drop-team/shared-types';

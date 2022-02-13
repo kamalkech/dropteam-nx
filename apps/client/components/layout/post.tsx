@@ -40,7 +40,7 @@ export function LayoutPost({ children }: LayoutProps) {
               <li>
                 <Link href="/posts">
                   <a className={router.pathname == '/posts' ? 'active' : ''}>
-                    All articles
+                    All Articles
                   </a>
                 </Link>
               </li>

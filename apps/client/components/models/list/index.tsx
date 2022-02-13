@@ -1,5 +1,5 @@
 import { IPost } from '@drop-team/shared-types';
-import Post from '../item/index';
+import Post from '@components/models/item/index';
 
 /* eslint-disable-next-line */
 export interface PostsProps {
