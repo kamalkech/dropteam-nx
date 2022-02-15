@@ -1,5 +1,3 @@
-import publicRuntimeConfig from '@utils/config';
-
 // Import components.
 import LayoutPost from '@components/layout/post';
 import DetailPost from '@components/models/detail';
@@ -22,7 +20,7 @@ export function Post({ post }: Props) {
 
 export async function getStaticProps({ params }) {
   const id = params.id;
-  const res = await fetch(`${publicRuntimeConfig.URL_API}/posts/${id}`);
+  const res = await fetch(`${process.env.URL_API}/posts/${id}`);
   const post = await res.json();
 
   return {
@@ -33,7 +31,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch(`${publicRuntimeConfig.URL_API}/posts?_limit=4`);
+  const res = await fetch(`${process.env.URL_API}/posts?_limit=4`);
   const posts = await res.json();
 
   const paths = posts.map((post) => ({

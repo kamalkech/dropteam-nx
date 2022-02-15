@@ -1,5 +1,3 @@
-import publicRuntimeConfig from '../../utils/config';
-
 // Import components.
 import LayoutPost from '@components/layout/post';
 import Posts from '@components/models/list';
@@ -21,7 +19,7 @@ export function Index({ posts }: Props) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${publicRuntimeConfig.URL_API}/posts?_limit=4`);
+  const res = await fetch(`${process.env.URL_API}/posts?_limit=4`);
   const posts = await res.json();
 
   return {
